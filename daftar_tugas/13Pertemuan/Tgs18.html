@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Pilihan</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    function showCalculator() {
+        // Tambahkan fungsi kalkulator yang telah Anda buat sebelumnya di sini
+        // Contoh:
+        alert('tampilkanlah perhitungan kalkulator');
+    }
+
+    function showTrapezoidArea() {
+        // Tambahkan perhitungan luas trapesium di sini
+        // Contoh:
+        alert('tampilkan luas trapesium');
+    }
+
+    function showNumberSeries() {
+        // Tambahkan perhitungan deret bilangan di sini
+        // Contoh:
+        alert('tampilkan deret bilangan');
+    }
+
+    function displayOption() {
+        var choice = prompt('Menu Pilihan:\n[1] Menghitung Kalkulator\n[2] Menghitung Luas Trapesium\n[3] Menghitung Deret\nPilihan Anda:');
+        
+        switch (choice) {
+            case '1':
+                showCalculator();
+                break;
+            case '2':
+                showTrapezoidArea();
+                break;
+            case '3':
+                showNumberSeries();
+                break;
+            default:
+                alert('Pilihan tidak valid');
+        }
+    }
+
+    displayOption(); // Untuk menampilkan menu pilihan saat halaman dimuat
+</script>
+
+</body>
+</html>

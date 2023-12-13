@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of all arguments</title>
+</head>
+<body>
+
+<p id="result">Sum of all arguments</p>
+
+<script>
+function sumAll() {
+    var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+}
+
+document.getElementById("result").innerHTML = "Sum: " + sumAll(10, 127, 400, 125, 34, 78);
+</script>
+
+</body>
+</html>
